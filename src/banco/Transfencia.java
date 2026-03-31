@@ -36,6 +36,8 @@ public class Transfencia {
             senha = valor.nextInt();
         }
 
-        System.out.println("transferencia realizado!");
+        if (comfirmar == true) {
+            System.out.println("transferencia realizado!");
+        }
     }
 }

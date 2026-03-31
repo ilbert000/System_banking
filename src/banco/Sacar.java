@@ -10,7 +10,7 @@ public class Sacar {
         System.out.println("saque selecionado \n qual valor deseja retirar");
         saque = valor.nextDouble();
 
-        System.out.print("deseja realizar a retiradado: " + valor + ",");
+        System.out.print("deseja realizar a retiradado: " + saque + ",");
         System.out.println(" escreva true para sim e false para não");
         comfirmar = valor.nextBoolean();
         if (comfirmar == true) {
@@ -25,6 +25,9 @@ public class Sacar {
             System.out.println("digite sua senha: ");
             senha = valor.nextInt();
         }
-        System.out.println("saque realizado no valor de: " + valor + " realizado!");
+
+        if (comfirmar == true) {
+            System.out.println("saque realizado no valor de: " + valor + " realizado!");
+        }
     }
 }

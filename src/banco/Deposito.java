@@ -10,7 +10,7 @@ public class Deposito {
         System.out.println("funcao de depositar selecionada");
         System.out.println("qual valor deseja depositar");
         valorDeposito = valor.nextDouble();
-        System.out.println("voce deseja depositar o valor de: " +  valor +  ", se sim degite true, se nao digite false" );
+        System.out.println("voce deseja depositar o valor de: " +  valorDeposito +  ", se sim degite true, se nao digite false" );
         comfirmar = valor.nextBoolean();
 
         if (comfirmar == true){
@@ -26,6 +26,8 @@ public class Deposito {
             senha = valor.nextInt();
         }
 
-        System.out.println("deposito realizado!");
+        if (comfirmar == true) {
+            System.out.println("deposito realizado!");
+        }
     }
 }

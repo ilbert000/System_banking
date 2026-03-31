@@ -11,9 +11,6 @@ public static void main(String[] args) {
     int number = valor.nextInt();
 
     while (number == 1 || number == 2 || number == 3) {
-        System.out.println("escolha uma das opções a seguir: \n 1: sacar\n 2: depositar\n 3: transferir\n 4: sair\n");
-        number = valor.nextInt();
-
         switch (number) {
             case 1:
                 Sacar.sacar(valor);
@@ -28,6 +25,9 @@ public static void main(String[] args) {
                 System.out.println("voce esta deslogado");
                 break;
         }
+
+        System.out.println("escolha uma das opções a seguir: \n 1: sacar\n 2: depositar\n 3: transferir\n 4: sair\n");
+        number = valor.nextInt();
         }
     }
 }
